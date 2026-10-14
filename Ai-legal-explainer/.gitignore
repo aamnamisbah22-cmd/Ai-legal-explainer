@@ -1,0 +1,56 @@
+# Environment variables
+.env
+
+# Google Cloud credentials
+*creds*.json
+*key*.json
+*credentials*.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Streamlit
+.streamlit/
+
+# Virtual environments
+venv*/
+env*/
+.venv*/
+.env*/
+
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+._*
+.AppleDouble
+.LSOverride
+
+# Dependencies
+node_modules/
+dist/
+
+# Next.js Build
+.next/
+out/
+
+# Uploads
+uploads/
+
+# Local Environment Overrides
+.env.local
+.env.*.local
+frontend/.env.local
+
+

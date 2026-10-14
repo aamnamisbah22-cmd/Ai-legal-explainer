@@ -1,0 +1,312 @@
+{
+  "retrieval_comparison": {
+    "dense": {
+      "Hit_Rate@1": 0.2,
+      "Hit_Rate@3": 0.5,
+      "Hit_Rate@5": 0.6,
+      "MRR@5": 0.37,
+      "Precision@5": 0.14,
+      "Recall@5": 0.4286,
+      "Avg_Latency_ms": 30.75
+    },
+    "bm25": {
+      "Hit_Rate@1": 0.2,
+      "Hit_Rate@3": 0.7,
+      "Hit_Rate@5": 0.7,
+      "MRR@5": 0.4,
+      "Precision@5": 0.26,
+      "Recall@5": 0.5573,
+      "Avg_Latency_ms": 21.02
+    },
+    "hybrid": {
+      "Hit_Rate@1": 0.2,
+      "Hit_Rate@3": 0.7,
+      "Hit_Rate@5": 0.8,
+      "MRR@5": 0.4417,
+      "Precision@5": 0.22,
+      "Recall@5": 0.6286,
+      "Avg_Latency_ms": 21.37
+    }
+  },
+  "generation_metrics": {
+    "Faithfulness_Grounding_Score": 0.6938,
+    "ROUGE_1_F1": 0.2378,
+    "ROUGE_2_F1": 0.1234,
+    "ROUGE_L_F1": 0.1793,
+    "Semantic_Answer_Relevance": 0.7646,
+    "Avg_Generation_Latency_sec": 12.75
+  },
+  "multilingual_detection": {
+    "accuracy": 1.0,
+    "details": [
+      {
+        "text": "What is self-attention in deep learning?",
+        "expected_code": "en",
+        "detected_code": "en",
+        "detected_name": "English",
+        "correct": true
+      },
+      {
+        "text": "ट्रांसफॉर्मर मॉडल में सेल्फ-अटेंशन कैसे काम करता है?",
+        "expected_code": "hi",
+        "detected_code": "hi",
+        "detected_name": "Hindi (हिन्दी)",
+        "correct": true
+      },
+      {
+        "text": "¿Cómo funciona el mecanismo de atención en redes neuronales?",
+        "expected_code": "es",
+        "detected_code": "es",
+        "detected_name": "Spanish (Español)",
+        "correct": true
+      },
+      {
+        "text": "Comment fonctionne le mécanisme d'attention dans les transformateurs?",
+        "expected_code": "fr",
+        "detected_code": "fr",
+        "detected_name": "French (Français)",
+        "correct": true
+      },
+      {
+        "text": "Wie funktioniert der Self-Attention-Mechanismus in Deep-Learning-Modellen?",
+        "expected_code": "de",
+        "detected_code": "de",
+        "detected_name": "German (Deutsch)",
+        "correct": true
+      },
+      {
+        "text": "自注意力机制在深度学习模型中是如何工作的？",
+        "expected_code": "zh-cn",
+        "detected_code": "zh-cn",
+        "detected_name": "Chinese (Simplified)",
+        "correct": true
+      },
+      {
+        "text": "ディープラーニングにおける自己注意機構はどのように機能しますか？",
+        "expected_code": "ja",
+        "detected_code": "ja",
+        "detected_name": "Japanese (日本語)",
+        "correct": true
+      },
+      {
+        "text": "كيف تعمل آلية الانتباه في نماذج التعلم العميق؟",
+        "expected_code": "ar",
+        "detected_code": "ar",
+        "detected_name": "Arabic (العربية)",
+        "correct": true
+      },
+      {
+        "text": "Как работает механизм внимания в архитектуре трансформера?",
+        "expected_code": "ru",
+        "detected_code": "ru",
+        "detected_name": "Russian (Русский)",
+        "correct": true
+      },
+      {
+        "text": "Como funciona o mecanismo de autoatenção em modelos neurais?",
+        "expected_code": "pt",
+        "detected_code": "pt",
+        "detected_name": "Portuguese (Português)",
+        "correct": true
+      }
+    ]
+  },
+  "per_query_results": [
+    {
+      "id": "tc-01",
+      "query": "What is the Scaled Dot-Product Attention formula?",
+      "faithfulness": 0.6042,
+      "rouge1_f1": 0.4296,
+      "rouge2_f1": 0.1654,
+      "rougeL_f1": 0.2963,
+      "semantic_relevance": 0.9279,
+      "latency_sec": 6.352,
+      "answer_preview": "The Scaled Dot-Product Attention formula is given by:  Attention(Q, K, V) = softmax(QK^T / √dk) * V  This formula is men..."
+    },
+    {
+      "id": "tc-02",
+      "query": "What BLEU score did the Transformer achieve on WMT 2014 English-to-German translation?",
+      "faithfulness": 0.8261,
+      "rouge1_f1": 0.6575,
+      "rouge2_f1": 0.4507,
+      "rougeL_f1": 0.4384,
+      "semantic_relevance": 0.9202,
+      "latency_sec": 2.377,
+      "answer_preview": "According to Source [1] (Page 8), the Transformer achieved a BLEU score of 28.4 on the WMT 2014 English-to-German transl..."
+    },
+    {
+      "id": "tc-03",
+      "query": "Why does the Transformer use positional encodings in the encoder and decoder?",
+      "faithfulness": 0.7477,
+      "rouge1_f1": 0.2252,
+      "rouge2_f1": 0.1636,
+      "rougeL_f1": 0.1982,
+      "semantic_relevance": 0.8353,
+      "latency_sec": 8.462,
+      "answer_preview": "The Transformer uses positional encodings in the encoder and decoder because the model contains no recurrence and no con..."
+    },
+    {
+      "id": "tc-04",
+      "query": "How many layers and parallel attention heads are in the base Transformer architecture?",
+      "faithfulness": 0.5,
+      "rouge1_f1": 0.3101,
+      "rouge2_f1": 0.126,
+      "rougeL_f1": 0.2636,
+      "semantic_relevance": 0.8492,
+      "latency_sec": 5.719,
+      "answer_preview": "According to the provided context excerpts, the base Transformer architecture has:  * 6 layers in the encoder (and presu..."
+    },
+    {
+      "id": "tc-05",
+      "query": "What optimizer and hyperparameter values were used to train the models?",
+      "faithfulness": 0.6538,
+      "rouge1_f1": 0.2814,
+      "rouge2_f1": 0.1117,
+      "rougeL_f1": 0.2111,
+      "semantic_relevance": 0.6583,
+      "latency_sec": 2.157,
+      "answer_preview": "According to the provided context excerpts, the optimizer used to train the models was the Adam optimizer [20] with the ..."
+    },
+    {
+      "id": "tc-06",
+      "query": "What is the definition and role of the artificial id?",
+      "faithfulness": 0.7034,
+      "rouge1_f1": 0.1754,
+      "rouge2_f1": 0.0989,
+      "rougeL_f1": 0.1544,
+      "semantic_relevance": 0.8652,
+      "latency_sec": 0.966,
+      "answer_preview": "The definition and role of the artificial id can be understood through the provided context excerpts.   The artificial i..."
+    },
+    {
+      "id": "tc-07",
+      "query": "How does persistent alignment differ from external verification and stopping rules?",
+      "faithfulness": 0.6845,
+      "rouge1_f1": 0.1031,
+      "rouge2_f1": 0.0208,
+      "rougeL_f1": 0.0687,
+      "semantic_relevance": 0.5789,
+      "latency_sec": 22.454,
+      "answer_preview": "According to the provided context excerpts, persistent alignment differs from external verification and stopping rules i..."
+    },
+    {
+      "id": "tc-08",
+      "query": "What challenge arises when agents move from bounded task execution to continuous operation?",
+      "faithfulness": 0.7186,
+      "rouge1_f1": 0.1364,
+      "rouge2_f1": 0.0784,
+      "rougeL_f1": 0.1104,
+      "semantic_relevance": 0.7145,
+      "latency_sec": 15.29,
+      "answer_preview": "When agents move from bounded task execution to continuous operation, the challenge that arises is related to control an..."
+    },
+    {
+      "id": "tc-09",
+      "query": "Compare attention mechanisms in deep learning with internal drives in agentic AI architectures.",
+      "faithfulness": 0.5,
+      "rouge1_f1": 0.0596,
+      "rouge2_f1": 0.0187,
+      "rougeL_f1": 0.0521,
+      "semantic_relevance": 0.8152,
+      "latency_sec": 49.068,
+      "answer_preview": "To compare attention mechanisms in deep learning with internal drives in agentic AI architectures, we must first underst..."
+    },
+    {
+      "id": "tc-10",
+      "query": "ट्रांसफॉर्मर मॉडल में अटेंशन मैकेनिज्म का क्या काम है?",
+      "faithfulness": 1.0,
+      "rouge1_f1": 0.0,
+      "rouge2_f1": 0.0,
+      "rougeL_f1": 0,
+      "semantic_relevance": 0.481,
+      "latency_sec": 14.648,
+      "answer_preview": "ट्रांसफॉर्मर मॉडल में अटेंशन मैकेनिज्म का काम यह है कि यह मॉडल को यह तय करने में मदद करता है कि किस इनपुट एलिमेंट पर अधि..."
+    }
+  ],
+  "summary_table": [
+    {
+      "Category": "Retrieval (Hybrid RRF)",
+      "Metric": "Hit Rate @ 1 (HR@1)",
+      "Value": "0.2000 (20.0%)",
+      "Meaning": "Probability that the first retrieved chunk is relevant to the query"
+    },
+    {
+      "Category": "Retrieval (Hybrid RRF)",
+      "Metric": "Hit Rate @ 3 (HR@3)",
+      "Value": "0.7000 (70.0%)",
+      "Meaning": "Probability that at least one relevant chunk is retrieved within the top 3 results"
+    },
+    {
+      "Category": "Retrieval (Hybrid RRF)",
+      "Metric": "Hit Rate @ 5 (HR@5)",
+      "Value": "0.8000 (80.0%)",
+      "Meaning": "Probability that at least one relevant chunk is retrieved within the top 5 results"
+    },
+    {
+      "Category": "Retrieval (Hybrid RRF)",
+      "Metric": "Mean Reciprocal Rank (MRR@5)",
+      "Value": "0.4417",
+      "Meaning": "Average of reciprocal ranks (1/rank) of the first relevant chunk; evaluates ranking position"
+    },
+    {
+      "Category": "Retrieval (Hybrid RRF)",
+      "Metric": "Precision @ 5 (P@5)",
+      "Value": "0.2200",
+      "Meaning": "Proportion of retrieved chunks in top-5 that are genuinely relevant"
+    },
+    {
+      "Category": "Retrieval (Hybrid RRF)",
+      "Metric": "Recall @ 5 (R@5)",
+      "Value": "0.6286",
+      "Meaning": "Proportion of all known ground-truth chunks successfully retrieved in top-5"
+    },
+    {
+      "Category": "Retrieval (Hybrid RRF)",
+      "Metric": "Retrieval Latency",
+      "Value": "21.37 ms",
+      "Meaning": "Average wall-clock time to execute embedding encoding + BM25 scoring + RRF fusion"
+    },
+    {
+      "Category": "Generation & Faithfulness",
+      "Metric": "Context Grounding (Faithfulness)",
+      "Value": "0.6938 (69.4%)",
+      "Meaning": "Proportion of generated answer claims grounded directly in retrieved source chunks (hallucination resistance)"
+    },
+    {
+      "Category": "Generation & Faithfulness",
+      "Metric": "ROUGE-1 F1",
+      "Value": "0.2378",
+      "Meaning": "Harmonic mean of unigram precision and recall against authoritative paper facts"
+    },
+    {
+      "Category": "Generation & Faithfulness",
+      "Metric": "ROUGE-2 F1",
+      "Value": "0.1234",
+      "Meaning": "Harmonic mean of bigram precision and recall against authoritative paper facts"
+    },
+    {
+      "Category": "Generation & Faithfulness",
+      "Metric": "ROUGE-L F1",
+      "Value": "0.1793",
+      "Meaning": "Longest common subsequence overlap representing factual sequence structure"
+    },
+    {
+      "Category": "Generation & Faithfulness",
+      "Metric": "Semantic Answer Relevance",
+      "Value": "0.7646",
+      "Meaning": "Cosine similarity between generated response embedding and reference truth embedding"
+    },
+    {
+      "Category": "Generation & Faithfulness",
+      "Metric": "Generation Latency",
+      "Value": "12.75 s",
+      "Meaning": "Average wall-clock time for the LLM synthesis pipeline to stream the complete explanation"
+    },
+    {
+      "Category": "Linguistics & Multilingual",
+      "Metric": "Language Detection Accuracy",
+      "Value": "1.0000 (100.0%)",
+      "Meaning": "Classification accuracy of langdetect across multilingual query benchmark"
+    }
+  ]
+}

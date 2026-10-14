@@ -1,0 +1,165 @@
+[
+  {
+    "id": "tc-01",
+    "doc_id": "0f9db795-8330-497c-b523-1665607ff4cf",
+    "query": "What is the Scaled Dot-Product Attention formula?",
+    "type": "exact_technical",
+    "expected_chunk_ids": [
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_4",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_5",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p4_24",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p5_35"
+    ],
+    "reference_answer": "Scaled Dot-Product Attention computes the attention function on queries Q, keys K, and values V using softmax(QK^T / sqrt(d_k))V, where the dot products are divided by the square root of the key dimension d_k."
+  },
+  {
+    "id": "tc-02",
+    "doc_id": "0f9db795-8330-497c-b523-1665607ff4cf",
+    "query": "What BLEU score did the Transformer achieve on WMT 2014 English-to-German translation?",
+    "type": "exact_fact",
+    "expected_chunk_ids": [
+      "0f9db795-8330-497c-b523-1665607ff4cf_p8_60"
+    ],
+    "reference_answer": "On the WMT 2014 English-to-German translation task, the big Transformer model achieved a state-of-the-art BLEU score of 28.4, outperforming previous existing models."
+  },
+  {
+    "id": "tc-03",
+    "doc_id": "0f9db795-8330-497c-b523-1665607ff4cf",
+    "query": "Why does the Transformer use positional encodings in the encoder and decoder?",
+    "type": "conceptual",
+    "expected_chunk_ids": [
+      "0f9db795-8330-497c-b523-1665607ff4cf_p6_40"
+    ],
+    "reference_answer": "Since the Transformer contains no recurrence and no convolution, positional encodings are injected into the input embeddings to make use of the order of the sequence."
+  },
+  {
+    "id": "tc-04",
+    "doc_id": "0f9db795-8330-497c-b523-1665607ff4cf",
+    "query": "How many layers and parallel attention heads are in the base Transformer architecture?",
+    "type": "exact_technical",
+    "expected_chunk_ids": [
+      "0f9db795-8330-497c-b523-1665607ff4cf_p3_19"
+    ],
+    "reference_answer": "The Transformer encoder and decoder are each composed of a stack of N = 6 identical layers, and Multi-Head Attention uses h = 8 parallel attention heads."
+  },
+  {
+    "id": "tc-05",
+    "doc_id": "0f9db795-8330-497c-b523-1665607ff4cf",
+    "query": "What optimizer and hyperparameter values were used to train the models?",
+    "type": "exact_fact",
+    "expected_chunk_ids": [
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_0",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_1",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_2"
+    ],
+    "reference_answer": "The models were trained using the Adam optimizer with beta_1 = 0.9, beta_2 = 0.98, and epsilon = 10^-9, with a scheduled learning rate that increases linearly for warmup and then decreases proportionally to the inverse square root of the step number."
+  },
+  {
+    "id": "tc-06",
+    "doc_id": "1d6fe252-d7b6-46f3-9a08-b579ae085042",
+    "query": "What is the definition and role of the artificial id?",
+    "type": "conceptual",
+    "expected_chunk_ids": [
+      "1d6fe252-d7b6-46f3-9a08-b579ae085042_p2_10"
+    ],
+    "reference_answer": "The artificial id is an architectural component that supplies an internal drive to an artificial agent, determining how long to persist, what trade-offs to accept, and re-adapting during continued operation across task boundaries."
+  },
+  {
+    "id": "tc-07",
+    "doc_id": "1d6fe252-d7b6-46f3-9a08-b579ae085042",
+    "query": "How does persistent alignment differ from external verification and stopping rules?",
+    "type": "conceptual",
+    "expected_chunk_ids": [
+      "1d6fe252-d7b6-46f3-9a08-b579ae085042_p1_0",
+      "1d6fe252-d7b6-46f3-9a08-b579ae085042_p1_1"
+    ],
+    "reference_answer": "Current agent systems rely on external control, harnesses, and stopping rules, whereas an artificial id internalizes drive and state persistence across task boundaries."
+  },
+  {
+    "id": "tc-08",
+    "doc_id": "1d6fe252-d7b6-46f3-9a08-b579ae085042",
+    "query": "What challenge arises when agents move from bounded task execution to continuous operation?",
+    "type": "conceptual",
+    "expected_chunk_ids": [
+      "1d6fe252-d7b6-46f3-9a08-b579ae085042_p1_0"
+    ],
+    "reference_answer": "When agents move from bounded task execution toward systems that retain consequential state and continue operating across task boundaries, drift, corrupted state, and unintended behavior can persist."
+  },
+  {
+    "id": "tc-09",
+    "doc_id": null,
+    "query": "Compare attention mechanisms in deep learning with internal drives in agentic AI architectures.",
+    "type": "comparative",
+    "expected_chunk_ids": [
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_0",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_1",
+      "1d6fe252-d7b6-46f3-9a08-b579ae085042_p1_0",
+      "1d6fe252-d7b6-46f3-9a08-b579ae085042_p1_1"
+    ],
+    "reference_answer": "Attention mechanisms allow deep neural networks to weigh input tokens without recurrent bottlenecks, while internal drives in agent architectures regulate persistence, trade-offs, and state continuity across task boundaries."
+  },
+  {
+    "id": "tc-10",
+    "doc_id": "0f9db795-8330-497c-b523-1665607ff4cf",
+    "query": "ट्रांसफॉर्मर मॉडल में अटेंशन मैकेनिज्म का क्या काम है?",
+    "type": "multilingual_hi",
+    "expected_chunk_ids": [
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_0",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_1",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_2",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_4",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p1_5",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p2_10",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p2_11",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p2_12",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p2_14",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p2_15",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p2_16",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p2_17",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p3_19",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p3_20",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p3_21",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p3_22",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p3_23",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p4_24",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p4_25",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p4_26",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p4_27",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p4_28",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p4_29",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p5_31",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p5_32",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p5_33",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p5_34",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p5_35",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p5_36",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p6_39",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p6_40",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p6_43",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p6_44",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p6_46",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p6_47",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p7_48",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p7_50",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p7_51",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p9_67",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p9_68",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p9_71",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p10_76",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p10_77",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p10_78",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p11_85",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p11_86",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p11_88",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p12_89",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p12_90",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p13_97",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p13_98",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p14_99",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p14_100",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p15_101",
+      "0f9db795-8330-497c-b523-1665607ff4cf_p15_102"
+    ],
+    "reference_answer": "ट्रांसफॉर्मर मॉडल में अटेंशन मैकेनिज्म इनपुट सीक्वेंस के अलग-अलग हिस्सों के बीच संबंधों को मापता है बिना रिकरेंस के।"
+  }
+]

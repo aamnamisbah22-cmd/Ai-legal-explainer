@@ -1,0 +1,24 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+venv_clean/
+venv_new/
+pip_tmp/
+.env
+.env.local
+
+# Next.js Frontend (deployed separately)
+frontend/
+.next/
+node_modules/
+
+# Local data / uploads
+uploads/
